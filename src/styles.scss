@@ -1,0 +1,29 @@
+@import "node_modules/normalize-scss/sass/_normalize";
+@include normalize();
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+  background: #EEE;
+}
+
+.App{
+  &__header{
+    padding: 15px;
+    background: #232323;
+    text-align: center;
+    h1{
+      display: inline-block;
+      margin: 0;
+      line-height: 1em;
+      font-size: 1.2rem;
+      letter-spacing: 0.2rem;
+      font-weight: 300;
+      color: #f9f9f9;
+      text-transform: uppercase;
+    }
+  }
+}
