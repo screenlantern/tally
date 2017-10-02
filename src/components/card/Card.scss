@@ -16,6 +16,8 @@
         }
     }
     p {
+        display: flex;
+        justify-content: center;
         margin: 0 0 5px;
     }
     &__avatar {
@@ -36,7 +38,7 @@
         font-weight: 700;
     }
     &__email {
-        font-weight: 400
+        font-weight: 400;
     }
     @media (max-width: 741px) {
         flex: 1 0 100%;
