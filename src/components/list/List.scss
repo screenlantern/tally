@@ -1,7 +1,12 @@
 .List{
-    max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 15px 0;
+
+    @media (max-width: 741px){
+       padding: 15px 15px;
+    }
 }

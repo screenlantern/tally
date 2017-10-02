@@ -1,11 +1,45 @@
-.Card{
+.Card {
+    flex: 1 0 30%;
+    overflow: hidden;
     background: #f9f9f9;
-    flex: 1;
-    width: 32%;
+    border: 1px solid #E2E2E2;
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, 0.5);
     padding: 30px 60px;
     text-align: center;
-    margin: 10px;
-    p{
-        margin: 0 0 10px;
+    margin: 15px 15px;
+    justify-content: space-between;
+    h5 {
+        margin-bottom: 0;
+        color: #9EA9BB;
+        &+p {
+            color: #9EA9BB;
+        }
+    }
+    p {
+        margin: 0 0 5px;
+    }
+    &__avatar {
+        img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        display: inline-block;
+        overflow: hidden;
+        height: 90px;
+        width: 90px;
+        border-radius: 50%;
+        margin-bottom: 20px;
+    }
+    &__name {
+        font-weight: 700;
+    }
+    &__email {
+        font-weight: 400
+    }
+    @media (max-width: 741px) {
+        flex: 1 0 100%;
+        margin: 15px 0;
     }
 }
